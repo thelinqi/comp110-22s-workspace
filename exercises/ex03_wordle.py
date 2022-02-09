@@ -1,13 +1,13 @@
-"""EX_03: the 6-turn worldle"""
+"""EX_03: the 6-turn worldle."""
 
 __author__ = "730487849"
 
 
 def contains_char(secret: str, search_letter: str) -> bool:
-    """searching for a letter"""
+    """Searching for a letter."""
     assert len(search_letter) == 1
     index: int = 0
-    while index < len(secret):
+    while index < len(secret):  
         if search_letter == secret[index]:
             return True
         else:
@@ -16,7 +16,7 @@ def contains_char(secret: str, search_letter: str) -> bool:
 
 
 def emojified(guess: str, secret: str) -> str:
-    """giving back emojis"""
+    """Giving back emojis."""
     assert len(guess) == len(secret)
     WHITE_BOX: str = "\U00002B1C"
     GREEN_BOX: str = "\U0001F7E9"
@@ -37,7 +37,7 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(expected_len: int) -> str:
-    """gives back the expected length of the word"""
+    """Gives back the expected length of the word."""
     guess: str = input(f'Enter a {expected_len} character word: ')
     while len(guess) != expected_len:
         guess = input(f"That wasn't {expected_len} chars! Try again: ")
