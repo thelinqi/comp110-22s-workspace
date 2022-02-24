@@ -14,7 +14,7 @@ def only_evens(xs: list[int]) -> list[int]:
     return final
 
 
-def sub(xs: list, a: int, b: int) -> list[int]:
+def sub(xs: list[int], a: int, b: int) -> list[int]:
     """Returns a list which is a subset of the given list."""
     final: list[int] = list()
     if len(xs) == 0:
