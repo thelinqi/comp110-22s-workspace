@@ -37,3 +37,5 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
     result: dict[str, list[str]] = {}
 
     return result
+
+
